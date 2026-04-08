@@ -11,6 +11,9 @@
         <label for="email">Email</label>
         <input type="email" name="email" id="email" value="<?php echo e(old('email')); ?>" required>
 
+        <label for="birthdate">Birthdate</label>
+        <input type="date" name="birthdate" id="birthdate" value="<?php echo e(old('birthdate')); ?>" required>
+
         <input type="hidden" name="role" value="user">
 
         <label for="password">Password</label>

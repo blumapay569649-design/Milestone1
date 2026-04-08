@@ -3,6 +3,11 @@
 <?php $__env->startSection('content'); ?>
     <h1>User Management</h1>
 
+    <form method="GET" action="<?php echo e(route('admin.users')); ?>" style="margin-bottom: 20px; display:flex; gap:12px; flex-wrap:wrap; align-items:center;">
+        <input type="text" name="search" value="<?php echo e(old('search', $search ?? '')); ?>" placeholder="Search user by ID or email" style="flex:1; min-width:220px; padding:10px 12px; border:1px solid #d1d5db; border-radius:8px;" />
+        <button type="submit" class="button-pill" style="margin:0;">Search</button>
+    </form>
+
     <table class="table">
         <thead>
             <tr>
