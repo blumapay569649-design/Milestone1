@@ -10,9 +10,10 @@
         <label for="password">Password</label>
         <input type="password" name="password" id="password" required>
 
-        <label>
-            <input type="checkbox" name="remember"> Remember me
-        </label>
+        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1.5rem;">
+            <input type="checkbox" name="remember" id="remember" style="width: 1rem; height: 1rem; cursor: pointer;">
+            <label for="remember" style="margin: 0; cursor: pointer;">Remember me</label>
+        </div>
 
         <button type="submit">Login</button>
     </form>

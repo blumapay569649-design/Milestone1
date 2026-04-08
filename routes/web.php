@@ -11,7 +11,7 @@ use App\Http\Controllers\WarehouseController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return redirect()->route('dashboard');
+    return view('welcome');
 });
 
 Route::get('/register', [AuthController::class, 'showRegister'])->name('register');
